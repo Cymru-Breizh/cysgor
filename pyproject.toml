@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cysgor"
+version = "0.1.0"
+description = "A Welsh grammaticality util based on Cysill"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+]
+license = {text = "MIT"}
+authors = [
+    {name = "Alan Kersaudy", email = "alan.kersaudy@proton.me"}
+]
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov", # For coverage reports
+]
+
+[project.scripts]
+cysgor = "cysgor.main:run_cli"
+
+[tool.setuptools.package-data]
+"cysgor" = ["bin/*"]
