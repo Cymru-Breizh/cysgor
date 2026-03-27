@@ -43,6 +43,7 @@ class Cysgor:
         content = path.read_text(encoding="utf-8")
 
         return content
+    
 
     def find_errors(self):
         import string
@@ -125,3 +126,4 @@ def run_cli():
 
     res = cysgorWrapper.find_errors()
     print(res.score)
+
