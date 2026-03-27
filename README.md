@@ -2,6 +2,11 @@
 
 Cysill wrapper to score Welsh texts' grammaticality. As it connects to the Cysill API, ensure to have a working internet connexion before using it.
 
+## Installation:
+```sh
+pip install cysgor
+```
+
 ## As a CLI
 There are two ways to use the CLI, either by entering a text file's path, or directly a text. The CLI returns a string of numbers representing the grammaticality score of the text.
 
